@@ -23,6 +23,8 @@ def add_list_numbers(incoming_list):
         total = 0
         for list_numbers in range(0, len(incoming_list)):
            total = total + incoming_list[list_numbers]
+    else:
+        total = 0
     return total 
 def longest_value_key(incoming_dict):
     """
