@@ -31,8 +31,13 @@ def longest_value_key(incoming_dict):
     Required parameter, incoming_dict, should be a dict.
     Find the KEY that has a value with the highest length, use the len() function
     """
+    if not incoming_dict:
+        return None
     all_keys = incoming_dict.keys()
+    if not all_keys:
+        return None
+    Longest_value = None
     for list_keys in range(0, len(all_keys)):
-        Longest_value = max(all_keys)
+               Longest_value = max(all_keys)
     return Longest_value
 
